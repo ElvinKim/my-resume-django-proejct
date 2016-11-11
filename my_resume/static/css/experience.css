@@ -1,0 +1,27 @@
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.exp-work-company {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #4ca5d0;
+}
+
+.exp-work-period {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.exp-work-position {
+    clear: both;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+.exp-work-description {
+    margin-top: 20px;
+    color: #878787;
+}
