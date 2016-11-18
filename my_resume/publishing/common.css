@@ -1,0 +1,143 @@
+@font-face {
+    font-family: NotoSansCJKtc;
+    font-weight: normal;
+    src: url("/fonts/NotoSansCJKtc-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NotoSansCJKtc;
+    font-weight : 500;
+    src: url("/fonts/NotoSansCJKtc-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NotoSansCJKtc;
+    font-weight: bold;
+    src: url("/fonts/NotoSansCJKtc-Bold.otf") format("opentype");
+}
+
+html {
+    background-color: #bfbfbf;
+    color: #FFFFFF;
+}
+
+body {
+    font-family: NotoSansCJKtc;
+}
+
+.body {
+    background-color: #404040;
+    padding: 20px;
+}
+
+/*header*/
+.header {
+    background-color: transparent;
+    
+}
+
+.all-contents-wrapper {
+    width: 100%;
+    max-width: 786px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+.menu-wrapper {
+    height: 50px;
+}
+
+.menu-wrapper .menu-item {
+    position: relative;
+    height: 50px;
+    width: 125px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    border-top: 5px solid #5C676C;
+    top: -5px;
+    font-weight: bold;
+}
+
+.menu-item-icon-wrapper {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-item-title-wrapper {
+    display: inline-block;
+}
+
+.menu-item.active, .menu-item:hover {
+    transition: 0.5s;
+    background-color: #404040;
+    color: #FFF;
+    font-weight: bold;
+    
+    border-radius: 10px 10px 0px 0px;
+    border-top: 5px solid #4ca5d0;
+}
+
+.menu-item[detail="profile"]:hover .menu-item-icon-wrapper, 
+.menu-item[detail="profile"].active .menu-item-icon-wrapper{
+   background-image: url('profile-icon-w.png') !important;
+}
+
+.menu-item[detail="education"]:hover .menu-item-icon-wrapper, 
+.menu-item[detail="education"].active .menu-item-icon-wrapper{
+   background-image: url('education-icon-w.png') !important;
+}
+
+.menu-item[detail="activity"]:hover .menu-item-icon-wrapper, 
+.menu-item[detail="activity"].active .menu-item-icon-wrapper{
+   background-image: url('paper-icon-w.png') !important;
+}
+
+.menu-item[detail="experience"]:hover .menu-item-icon-wrapper, 
+.menu-item[detail="experience"].active .menu-item-icon-wrapper{
+   background-image: url('briefcase-icon-w.png') !important;
+}
+
+.menu-item[detail="project"]:hover .menu-item-icon-wrapper, 
+.menu-item[detail="project"].active .menu-item-icon-wrapper{
+   background-image: url('report-icon-w.png') !important;
+}
+
+/*text 관련*/
+.section-title {
+    font-size: 40px;
+    color: #4ca5d0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+hr {
+    color: #4ca5d0;
+    border: 1px solid;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 767px) {
+    .menu-item-title-wrapper {
+        display: none;
+    }
+    
+    .menu-wrapper .menu-item {
+        width: 50px;
+    }
+    
+    .photo-item {
+        width: 49% !important;
+    }
+}

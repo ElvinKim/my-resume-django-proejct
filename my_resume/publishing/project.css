@@ -1,0 +1,33 @@
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.project-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.project-period {
+}
+
+.proejct-description {
+    margin-top: 20px;
+    color: #878787;
+}
+
+.exp-work-photo-item {
+    width: 23%;
+    height: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media all and (max-width: 767px) {
+}
