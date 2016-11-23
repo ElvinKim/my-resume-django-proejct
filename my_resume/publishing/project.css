@@ -18,6 +18,30 @@
     color: #878787;
 }
 
+.project-desc-item {
+    margin-bottom: 10px
+}
+
+.project-desc-item-subtitle {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 10px
+}
+
+.project-desc-item-detail {
+    display: inline-block;
+    width: calc(100% - 130px)
+}
+
+.project-desc-item-detail  ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+}
+
 .exp-work-photo-item {
     width: 23%;
     height: 100px;
@@ -30,4 +54,14 @@
 
 
 @media all and (max-width: 767px) {
+    
+    .project-desc-item-subtitle {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .project-desc-item-detail {
+        width: 100%;
+    }
 }
