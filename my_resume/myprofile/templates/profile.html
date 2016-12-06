@@ -1,0 +1,80 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+
+
+{% block title %}
+Elvin Profile
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+{% block body %}
+                <div class="body-contents-wrapper">
+                    <div class="my-basic-info-wrapper">
+                        <div class="name-photo-wrapper">
+                            <div class="my-photo-wrapper">
+                                <img class="img-my-photo" src="{% static 'img/img/my-photo.png' %}">
+                            </div>
+
+                            <div class="my-name-job-wrapper">
+                                <div class="my-name-wrapper">김상묵</div>
+                                <div class="my-job-wrapper">데이터 사이언티스트</div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon-wrapper">
+                                        <img src="{% static 'img/icon/email-icon-blue.png' %}">
+                                    </div>
+                                    <div class="contact-info-wrapper">bonwho09@gmail.com</div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon-wrapper">
+                                        <img src="{% static 'img/icon/github-icon-blue.png' %}">
+                                    </div>
+                                    <div class="contact-info-wrapper">https://github.com/ElvinKim</div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon-wrapper">
+                                        <img src="{% static 'img/icon/blog-icon-blue.png' %}">
+                                    </div>
+                                    <div class="contact-info-wrapper">http://chobokkiri.tistory.com/</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-introduction-item">
+                        <div class="profile-title">Brief Bio</div>
+                        <div class="profile-derscription">
+                            Hi there!
+                        </div>
+                    </div>
+
+                    <div class="profile-introduction-item">
+                        <div class="profile-title">Research Interests</div>
+                        <ul>
+                            <li>Data mining</li>
+                            <li>Machine Learning</li>
+                            <li>Distributed parallel processing</li>
+                            <li>Recommendation System</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-introduction-item">
+                        <div class="profile-title">Education</div>
+                        <ul>
+                            <li>
+                                M.S., Graduate School of Knowledge Service Engineering, KAIST, 2017 - Present
+                            </li>
+                            <li>
+                                B.S., Department of Mathematics, Kookmin University, 2014
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+{% endblock %}
+
+
