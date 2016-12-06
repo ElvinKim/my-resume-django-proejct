@@ -19,6 +19,10 @@
     color: #878787;
 }
 
+.activity-description ul {
+    padding-left: 20px;
+}
+
 .exp-work-photo-item {
     width: 23%;
     height: 100px;
