@@ -1,0 +1,95 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+
+{% block title %}
+Elvin Profile
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/experience.css' %}">
+{% endblock %}
+
+{% block body %}
+ <div class="body-contents-wrapper">
+                    <div class="section-title">Work Experience</div>
+                    <hr>
+
+                    <div class="experience-item-container">
+                        <div class="experience-item">
+                            <div class="exp-work-company">Ouniwang</div>
+                            <div class="exp-work-period">2015.09 - 2016.12 </div>
+                            <div class="exp-work-position">Researcher</div>
+                            <div class="exp-work-description">
+                                <ul class="exp-work-detail-container">
+                                    <li>
+                                        한국 관련 영상 및 이미지 컨텐츠를 제공하는 App 개발
+                                    </li>
+                                    <li>
+                                        서버 관리, 데이터 베이스 관리, AWS과 Aliyun 아키텍처 관리, Restful API 개발, 컨텐츠 추천 시스템 개발, 관리자 페이지, 웹사이트 퍼블리싱 및 개발 업무를 맡음
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="exp-work-photo-conatainer photo-item-container">
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="exp-work-company">AskStory</div>
+                            <div class="exp-work-period">2014.03 - 2015.08 </div>
+                            <div class="exp-work-position">Researcher</div>
+                            <div class="exp-work-description">
+                                <ul class="exp-work-detail-container">
+                                    <li>
+                                        빅데이터 분석 및 데이터 마이닝 솔루션 개발
+                                    </li>
+                                    <li>
+                                        IoT 온도 조절기 개발
+                                    </li>
+                                    <li>
+                                        Askstory 개발 때는 웹, 서버, 검색, 데이터 마이닝 관련 개발 업무를 맡음
+                                    </li>
+
+                                    <li>
+                                        AskEnergy(IoT) 개발 때는 서버, 임베디드, 안드로이드, 온도 추천 알고리즘 업무를 맡음
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="exp-work-company">Yonsei University</div>
+                            <div class="exp-work-period">2014.01 - 2014.02 </div>
+                            <div class="exp-work-position">Intern</div>
+                            <div class="exp-work-description">
+                                <ul class="exp-work-detail-container">
+                                    <li>연세대 이원석 교수님의 권유로 연세대 데이터베이스 연구실에서 데이터 분석 업무를 수행</li>
+                                    <li>사기업 데이터 분석 업무를 맡음</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="exp-work-company">AhnLab</div>
+                            <div class="exp-work-period">2013.03 - 2013.08 </div>
+                            <div class="exp-work-position">Intern</div>
+                            <div class="exp-work-description">
+                                <ul class="exp-work-detail-container">
+                                    <li>
+                                        빅데이터 분석 레포트 검토 및 배포
+                                    </li>
+                                    <li>
+                                        서비스 UI/UX 개선 기획
+                                    </li>
+                                    <li>
+                                        사이트 튜토리얼 사이트 위키 서버로 구현
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}
+
+
