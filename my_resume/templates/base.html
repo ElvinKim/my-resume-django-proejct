@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1">
+	    <link rel="stylesheet" href="{% static '/css/common.css' %}">
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+        {% block css %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="all-contents-wrapper">
+            <div class="header">
+                <div class="menu-wrapper">
+                    <div class="menu-item active" detail="profile">
+                        <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/profile-icon-b.png');"></div>
+                        <div class="menu-item-title-wrapper">Profile</div>
+                    </div>
+                    <div class="menu-item" detail="activity">
+                        <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/paper-icon-b.png');"></div>
+                        <div class="menu-item-title-wrapper">Activity</div>
+                    </div>
+                    <div class="menu-item" detail="experience">
+                        <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/briefcase-icon-b.png');"></div>
+                        <div class="menu-item-title-wrapper">Experience</div>
+                    </div>
+                    <div class="menu-item" detail="project">
+                        <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/report-icon-b.png');"></div>
+                        <div class="menu-item-title-wrapper">Project</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body">
+                {% block body %}
+                {% endblock %}
+            </div>
+
+            <div class="footer">
+                {% block footer %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
