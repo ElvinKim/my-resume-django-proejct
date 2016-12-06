@@ -1,0 +1,67 @@
+
+.project-item {
+    margin-bottom: 30px;
+}
+
+.project-title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.project-period {
+}
+
+.proejct-description {
+    margin-top: 20px;
+    color: #878787;
+}
+
+.project-desc-item {
+    margin-bottom: 10px
+}
+
+.project-desc-item-subtitle {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 10px
+}
+
+.project-desc-item-detail {
+    display: inline-block;
+    width: calc(100% - 130px)
+}
+
+.project-desc-item-detail  ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+}
+
+.exp-work-photo-item {
+    width: 23%;
+    height: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media all and (max-width: 767px) {
+    
+    .project-desc-item-subtitle {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .project-desc-item-detail {
+        width: 100%;
+    }
+}

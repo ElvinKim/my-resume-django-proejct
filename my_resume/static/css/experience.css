@@ -1,3 +1,4 @@
+
 .experience-item {
     margin-bottom: 30px;
 }
@@ -6,12 +7,13 @@
     display: inline-block;
     font-size: 25px;
     font-weight: bold;
-    color: #4ca5d0;
+    color: #FFF;
 }
 
 .exp-work-period {
     display: inline-block;
     margin-left: 20px;
+    color: #dedede;
     font-weight: bold;
 }
 
@@ -24,4 +26,36 @@
 .exp-work-description {
     margin-top: 20px;
     color: #878787;
+}
+
+.exp-work-description .exp-work-detail-container {
+    padding-left: 20px;
+}
+
+
+.exp-work-description .exp-work-detail-item {
+    padding-left: 20px;
+}
+
+.exp-work-photo-conatainer {
+    margin-top: 30px;
+}
+
+
+.exp-work-photo-item {
+    width: 23%;
+    height: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media all and (max-width: 767px) {
+    .exp-work-period {
+        margin-left: 0px;
+        display: block;
+    }
 }

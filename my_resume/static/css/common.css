@@ -1,8 +1,29 @@
+@font-face {
+    font-family: NotoSansCJKtc;
+    font-weight: normal;
+    src: url("/fonts/NotoSansCJKtc-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NotoSansCJKtc;
+    font-weight : 500;
+    src: url("/fonts/NotoSansCJKtc-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NotoSansCJKtc;
+    font-weight: bold;
+    src: url("/fonts/NotoSansCJKtc-Bold.otf") format("opentype");
+}
+
 html {
     background-color: #bfbfbf;
     color: #FFFFFF;
 }
 
+body {
+    font-family: NotoSansCJKtc;
+}
 
 .body {
     background-color: #404040;
@@ -30,7 +51,7 @@ html {
 .menu-wrapper .menu-item {
     position: relative;
     height: 50px;
-    width: 120px;
+    width: 125px;
     line-height: 50px;
     display: inline-block;
     text-align: center;
@@ -68,27 +89,43 @@ html {
 
 .menu-item[detail="profile"]:hover .menu-item-icon-wrapper, 
 .menu-item[detail="profile"].active .menu-item-icon-wrapper{
-   background-image: url('profile-icon-w.png') !important;
+   background-image: url('/static/img/icon/profile-icon-w.png') !important;
 }
 
 .menu-item[detail="education"]:hover .menu-item-icon-wrapper, 
 .menu-item[detail="education"].active .menu-item-icon-wrapper{
-   background-image: url('education-icon-w.png') !important;
+   background-image: url('/static/img/icon/education-icon-w.png') !important;
 }
 
 .menu-item[detail="activity"]:hover .menu-item-icon-wrapper, 
 .menu-item[detail="activity"].active .menu-item-icon-wrapper{
-   background-image: url('paper-icon-w.png') !important;
+   background-image: url('/static/img/icon/paper-icon-w.png') !important;
 }
 
 .menu-item[detail="experience"]:hover .menu-item-icon-wrapper, 
 .menu-item[detail="experience"].active .menu-item-icon-wrapper{
-   background-image: url('briefcase-icon-w.png') !important;
+   background-image: url('/static/img/icon/briefcase-icon-w.png') !important;
 }
 
 .menu-item[detail="project"]:hover .menu-item-icon-wrapper, 
 .menu-item[detail="project"].active .menu-item-icon-wrapper{
-   background-image: url('report-icon-w.png') !important;
+   background-image: url('/static/img/icon/report-icon-w.png') !important;
+}
+
+/*text 관련*/
+.section-title {
+    font-size: 40px;
+    color: #4ca5d0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+hr {
+    color: #4ca5d0;
+    border: 1px solid;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 @media all and (max-width: 767px) {
@@ -98,5 +135,9 @@ html {
     
     .menu-wrapper .menu-item {
         width: 50px;
+    }
+    
+    .photo-item {
+        width: 49% !important;
     }
 }
