@@ -19,19 +19,19 @@
         <div class="all-contents-wrapper">
             <div class="header">
                 <div class="menu-wrapper">
-                    <div class="menu-item active" detail="profile">
+                    <div class="menu-item {{ menu_profile_active }}" detail="profile" onclick="window.location.href='/profile'">
                         <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/profile-icon-b.png');"></div>
                         <div class="menu-item-title-wrapper">Profile</div>
                     </div>
-                    <div class="menu-item" detail="activity">
+                    <div class="menu-item {{ menu_activity_active }}" detail="activity" onclick="window.location.href='/activity'">
                         <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/paper-icon-b.png');"></div>
                         <div class="menu-item-title-wrapper">Activity</div>
                     </div>
-                    <div class="menu-item" detail="experience">
+                    <div class="menu-item {{ menu_experience_active }}" detail="experience" onclick="window.location.href='/experience'">
                         <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/briefcase-icon-b.png');"></div>
                         <div class="menu-item-title-wrapper">Experience</div>
                     </div>
-                    <div class="menu-item" detail="project">
+                    <div class="menu-item {{ menu_project_active }}" detail="project" onclick="window.location.href='/project'">
                         <div class="menu-item-icon-wrapper" style="background-image:url('/static/img/icon/report-icon-b.png');"></div>
                         <div class="menu-item-title-wrapper">Project</div>
                     </div>
