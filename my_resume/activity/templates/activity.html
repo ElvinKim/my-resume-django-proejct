@@ -2,14 +2,87 @@
 {% load staticfiles %}
 
 {% block title %}
-Elvin Profile
+Activity
 {% endblock %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/experience.css' %}">
+<link rel="stylesheet" href="{% static 'css/activity.css' %}">
 {% endblock %}
 
 {% block body %}
+                <div class="body-contents-wrapper">
+                    <div class="section-title">봉사활동</div>
+                    <hr>
+
+                    <div class="activity-item-container">
+                        <div class="activity-item">
+                            <div class="activity-title">초, 중, 고 수학강의 자원봉자</div>
+                            <div class="activity-place">우리누리</div>
+                            <div class="activity-description">
+                                <ul>
+                                    <li>초, 중, 고 학생들 오후 수학 강사로 학습 지도</li>
+                                    <li>약 3년간 250시간 봉사활동</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-title">교육 이수</div>
+                    <hr>
+
+                    <div class="activity-item-container">
+                        <div class="activity-item">
+                            <div class="activity-title">대학생 데이터 분석 교실</div>
+                            <div class="activity-place">Alex & Company</div>
+                            <div class="activity-description">
+                                <ul>
+                                    <li>지표를 이용한 유저 데이터 분석 교실 수강</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-title">BDI 빅데이터 인텔리전스</div>
+                            <div class="activity-place">소프트웨어 & 콘텐츠 연구소</div>
+                            <div class="activity-description">
+                                <ul>
+                                    <li>빅데이터 분석에 관한 전반적인 교육</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-title">라온 시큐리티 대학생 체험단 1기</div>
+                            <div class="activity-place">라온 시큐리티</div>
+                            <div class="activity-description">
+                                <ul>
+                                    <li>웹 보안, 포렌식, 침투 테스트 관련 수업 수강</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-title">자격증</div>
+                    <hr>
+
+                    <div class="activity-item-container">
+                        <div class="activity-item">
+                            <div class="activity-title">정보 처리 기사</div>
+                            <div class="activity-place">한국 산업 인력 공단</div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-title">리눅스 마스터 2급</div>
+                            <div class="activity-place">KAIT</div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-title">정보보안 자격증 3급</div>
+                            <div class="activity-place">한국 해킹 보안 협회</div>
+                        </div>
+                    </div>
+
+                </div>
 {% endblock %}
 
 
