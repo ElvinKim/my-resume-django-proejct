@@ -42,6 +42,7 @@ PREREQ_APPS = [
 PRODJCT_APPS = [
     'myprofile',
     'experience',
+    'activity',
     'project',
 ]
 
