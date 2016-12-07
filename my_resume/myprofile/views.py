@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def main(request):
+    data = {}
+    data['menu_profile_active'] = "active"
+
+    return render(request, 'profile.html', data)
